@@ -1,0 +1,108 @@
+/* CartPage.css */
+
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar button {
+  margin: 5px;
+  padding: 8px 15px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pageHolder {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Title {
+  text-align: center;
+}
+
+/* Cart Section */
+
+.cartSection {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.ItemImgAndName {
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.imagesize {
+  max-width: 100px;
+  max-height: 120px;
+  margin-right: 15px;
+}
+
+.summaryPerProduct p {
+  margin: 0;
+}
+
+.totalSection {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* Checkout Section */
+
+.moveRight {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.moveRight input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.moveRight p {
+  margin: 0;
+}
+
+.moveRight h3 {
+  margin-top: 15px;
+}
+
+.moveRight button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.moveRight button:hover {
+  background-color: #0056b3;
+}
