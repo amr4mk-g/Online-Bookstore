@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/bookDetails.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="detialsPage" class="container containerTheme"></div>
+
+
+
+    <script>
+        // Get the current URL
+        const url = new URL(window.location.href);
+
+        // Access query parameters
+        const queryParams = url.searchParams;
+
+        // Get specific query parameter values
+        const queryValue = queryParams.get("query");
+        const pageValue = queryParams.get("page");
+
+        // Use the query parameter values
+        console.log("Query:", queryValue);
+        console.log("Page:", pageValue);
+    </script>
+</body>
+<script src="./script/details.js"></script>
+
+</html>

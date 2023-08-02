@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/loginStyles.css">
+</head>
+
+<body>
+
+
+
+    <div class="container containerTheme">
+
+        <div class="container mb-3">
+            <form class="fomr-group" action="#" method="post">
+                <p id="headertext" class="fst-italic">Login to Continue</p>
+                <br><br>
+
+                <input id="userEmail" class=" form-control-sm" type="text" placeholder="Email">
+                <br><br>
+                <input id="userPassword" class=" form-control-sm" type="password" placeholder="Password">
+                <br><br>
+
+                <button type="button" class="btn btn-outline-primary" onclick="signIn()">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script/login.js"></script>
+</body>
+
+</html>
