@@ -56,7 +56,7 @@ module.exports = {
    totalUsers: async (req, res) => {
     try {
         let total = await User.countDocuments();
-        res.json({"Total users": total});
+        res.json({"totalUsers": total});
       } catch (err) {
         res.status(500).json({error: err.message});
       }
@@ -65,7 +65,7 @@ module.exports = {
    totalBooks: async (req, res) => {
     try {
         const total = await Book.countDocuments();
-        res.json({"Total books": total});
+        res.json({"totalBooks": total});
       } catch (err) {
         res.status(500).json({error: err.message});
       }
@@ -74,7 +74,7 @@ module.exports = {
    totalOrders: async (req, res) => { 
     try {
         const total = await Order.countDocuments();
-        res.json({"Total orders": total});
+        res.json({"totalOrders": total});
       } catch (err) {
         res.status(500).json({error: err.message});
       }
@@ -84,7 +84,7 @@ module.exports = {
     try {
         let orders = await Order.find();
         let profit = orders.reduce((total, order) => total + order.profit, 0);
-        res.json({"Total profit": profit});
+        res.json({"totalProfit": profit});
       } catch (err) {
         res.status(500).json({error: err.message});
       }
