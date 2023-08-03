@@ -8,7 +8,7 @@ const router = express.Router()
 // Create new book
 router.post('/books', [valid.book, auth, types.subAdmin], control.addNew);
 // Update specific book 
-router.patch('/books/:bookId', [auth, types.subAdmin], control.update);
+router.put('/books/:bookId', [auth, types.subAdmin], control.update);
 // Delete specific book 
 router.delete('/books/:bookId', [auth, types.subAdmin], control.delete);
 // List all books 
@@ -27,6 +27,6 @@ router.get('/allOrders', [auth, types.subAdmin], control.orders);
 // List of all users
 router.get('/allUsers', [auth, types.admin], control.allUsers);
 // Change user type to sub-admin
-router.patch('/change/:userId', [auth, types.admin], control.changeUser);
+router.put('/change/:userId', [auth, types.admin], control.changeUser);
 
 module.exports = router
