@@ -319,7 +319,6 @@ nav .profile .profile-link a:hover {
 main {
   width: 100%;
   padding: 24px 20px 0px 20px;
- 
 }
 main .title {
   font-size: 28px;
@@ -674,28 +673,27 @@ h2 {
 }
 #booksList {
   display: grid;
-  grid-template-columns:  1fr 1fr 1fr 1fr;
-   /* Align items to the left */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* Align items to the left */
   align-items: flex-start; /* Align items to the top */
   gap: 10px;
   color: #ccc;
   background-color: #cfced3;
   padding-left: 10px;
-  padding-right:10px;
+  padding-right: 10px;
   justify-content: space-between;
-  padding-bottom:10px;
-  padding-top:  10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   margin-bottom: 100px;
-  z-index:1;
+  z-index: 1;
   /* Distribute items evenly along the main axis */
-  
 }
 
 #booksList > div {
   overflow: hidden;
   position: relative;
   height: 473px;
- 
+
   overflow-wrap: break-word;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -731,6 +729,160 @@ h2 {
   flex-basis: calc(20% - 15px); /* Adjust the width of the hovered item */
   opacity: 1;
 }
+#editBookForm {
+  display: grid;
+  grid-template-columns: 0.25fr 1.7fr;
+  overflow: hi;
+  width: 600px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: coral;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 5px;
+}
+
+#editBookForm input {
+  border-radius: 0.1rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #ffffff;
+  border: #ccc solid 1px;
+}
+#editBookForm label {
+  padding: 0.2rem 0.5rem;
+  background-color: #ffffff;
+}
+#editBookForm button {
+  font-size: 17px;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-top: 10px;
+}
+#editBookForm button:hover {
+  background-color: #0056b3;
+  transform: translateX(17px);
+  transition: all 0.3s;
+  animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+/* //>>>>>>>> */
+#addBookForm {
+  display: grid;
+  grid-template-columns: 0.25fr 1.7fr;
+  overflow: hi;
+  width: 600px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: coral;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 5px;
+}
+@media (min-width: 900px) {
+  #addBookDiv {
+    width: 100%;
+  }
+  #addBookForm {
+    display: grid;
+    grid-template-columns: 0.25fr 1.7fr;
+  }
+  #editBookDiv {
+    width: 100%;
+  }
+  #editBookForm {
+    display: grid;
+    grid-template-columns: 0.25fr 1.7fr;
+  }
+}
+@media (min-width: 600px) and (max-height: 899px) {
+  #addBookDiv {
+    width: 100%;
+  }
+  #addBookForm {
+    display: grid;
+    grid-template-columns: 0.25fr 1.75fr;
+    max-width: 100%;
+  }
+  #editBookDiv {
+    width: 100%;
+  }
+  #editBookForm {
+    display: grid;
+    grid-template-columns: 0.25fr 1.75fr;
+    max-width: 100%;
+  }
+  #booksList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 20px;
+  }
+  #usersList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+}
+@media (max-width: 599px) {
+  #addBookDiv {
+    width: 100%;
+  }
+  #addBookForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  #editBookDiv {
+    width: 100%;
+  }
+  #editBookForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  #booksList {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  #usersList {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+#addBookForm input {
+  border-radius: 0.1rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #ffffff;
+  border: #ccc solid 1px;
+}
+#addBookForm label {
+  padding: 0.2rem 0.5rem;
+  background-color: #ffffff;
+}
+#addBookForm button {
+  font-size: 17px;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-top: 10px;
+}
+#addBookForm button:hover {
+  background-color: #0056b3;
+  transform: translateX(17px);
+  transition: all 0.3s;
+}
 
 .placeHolder {
   border-radius: 1rem;
@@ -738,32 +890,5 @@ h2 {
   border: #ccc solid 1px;
   text-overflow: break-word;
   padding: 5px;
- height:fit-content
+  height: fit-content;
 }
-footer {
-  background-color: #f0f0f0;
-  padding: 20px;
-  text-align: center;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  display:block;
-  margin-top: 20px;
-  z-index: 1;
-}
-
-footer p {
-  margin: 5px 0;
-}
-
-/* Optionally, add a border-top for the footer to separate it from the content */
-footer {
-  border-top: 1px solid #ccc;
-}
-
-.beforfooter{
-	height: 200px;
-	display: block;
-}
-/* Optionally, add some spacing above the footer to separate it from the content */
