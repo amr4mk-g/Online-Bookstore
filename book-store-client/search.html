@@ -1,0 +1,197 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>search for your book</title>
+    </head>
+    
+    <body>
+        <!--==================== PRODUCTS ====================-->
+        <section class="products section container" class="list" id="products">
+            <div class="search-style">
+                <button class="back" onclick="backButton()">Take me Back!</button>
+    
+                <br>
+                <input id="searchbar" type="text" name="search" placeholder="Search book..">
+                <br>
+                <button class="back" onclick="searchBook()" >Search</button>
+    
+            </div>
+            <h2 class="section__title">
+                books
+            </h2>
+    
+            <div id="ele" class="products__container grid ">
+                <article class="products__card">
+                    <img src="assets/img/5131OWtQRaL._SL350_.jpg" alt="" class="products__img">
+    
+                    <h3 class="products__title">javascript <br> the good parts</h3>
+                    <span class="products__price">$15</span>
+    
+                    <button class="products__button">
+                        <i class="fa fa-shopping-cart"
+                            style="font-size:25px;background-color: white; color:  orange;border: none;padding: 10px;"></i>
+                    </button>
+                </article>
+    
+                <article class="products__card">
+                    <img src="assets/img/2bec2-1nmgugjaqwjled264nbz-ow.png" alt="" class="products__img">
+    
+                    <h3 class="products__title">bulding <br> micro-frontend</h3>
+                    <span class="products__price">$25</span>
+    
+                    <button class="products__button">
+                        <i class="fa fa-shopping-cart"
+                            style="font-size:25px;background-color: white; color:  orange;border: none;padding: 10px;"></i>
+                    </button>
+                </article>
+    
+                <article class="products__card">
+                    <img src="assets/img/Learn-JavaScript-Programming-3-Books-in-1-The-Best-Beginner-s-Guide-to-Learn-JavaScript-and-Master-Front-End-Back-End-Programming-Paperback-978180235_8dcf26c7-5d69-40da-9994-a78f9b8483ff.c7089255ca0099f00ad77a8c7ecbc391.jpeg"
+                        alt="" class="products__img">
+    
+                    <h3 class="products__title">bulding <br> javascript <br>programming</h3>
+                    <span class="products__price">$36</span>
+    
+                    <button class="products__button">
+                        <i class="fa fa-shopping-cart"
+                            style="font-size:25px;background-color: white; color:  orange;border: none;padding: 10px;"></i>
+                    </button>
+                </article>
+    
+                <article class="products__card">
+                    <img src="assets/img/frontend-workflow-with-html5-and-sass-book.jpeg" alt="" class="products__img">
+    
+                    <h3 class="products__title">Front-end <br> workflow</h3>
+                    <span class="products__price">$65</span>
+    
+                    <button class="products__button">
+                        <i class="fa fa-shopping-cart"
+                            style="font-size:25px;background-color: white; color:  orange;border: none;padding: 10px;"></i>
+                    </button>
+                </article>
+    
+                <article class="products__card">
+                    <img src="assets/img/html5-missing_manual.jpeg" alt="" class="products__img">
+    
+                    <h3 class="products__title">html5</h3>
+                    <span class="products__price">$30</span>
+    
+                    <button class="products__button">
+                        <i class="fa fa-shopping-cart"
+                            style="font-size:25px;background-color: white; color:  orange;border: none;padding: 10px;"></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="assets/img/frontend-workflow-with-html5-and-sass-book.jpeg" alt="" class="products__img">
+    
+                    <h3 class="products__title">Front-end <br> workflow</h3>
+                    <span class="products__price">$65</span>
+    
+                    <button class="products__button">
+                        <i class="fa fa-shopping-cart"
+                            style="font-size:25px;background-color: white; color:  orange;border: none;padding: 10px;"></i>
+                    </button>
+                </article>
+    
+                <article class="products__card">
+                    <img src="assets/img/html5-missing_manual.jpeg" alt="" class="products__img">
+    
+                    <h3 class="products__title">html5</h3>
+                    <span class="products__price">$30</span>
+    
+                    <button class="products__button">
+                        <i class="fa fa-shopping-cart"
+                            style="font-size:25px;background-color: white; color:  orange;border: none;padding: 10px;"></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="assets/img/frontend-workflow-with-html5-and-sass-book.jpeg" alt="" class="products__img">
+    
+                    <h3 class="products__title">Front-end <br> workflow</h3>
+                    <span class="products__price">$65</span>
+    
+                    <button class="products__button">
+                        <i class="fa fa-shopping-cart"
+                            style="font-size:25px;background-color: white; color:  orange;border: none;padding: 10px;"></i>
+                    </button>
+                </article>
+    
+                <article class="products__card">
+                    <img src="assets/img/html5-missing_manual.jpeg" alt="" class="products__img">
+    
+                    <h3 class="products__title">html5</h3>
+                    <span class="products__price">$30</span>
+    
+                    <button class="products__button">
+                        <i class="fa fa-shopping-cart"
+                            style="font-size:25px;background-color: white; color:  orange;border: none;padding: 10px;"></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="assets/img/frontend-workflow-with-html5-and-sass-book.jpeg" alt="" class="products__img">
+    
+                    <h3 class="products__title">Front-end <br> workflow</h3>
+                    <span class="products__price">$65</span>
+    
+                    <button class="products__button">
+                        <i class="fa fa-shopping-cart"
+                            style="font-size:25px;background-color: white; color:  orange;border: none;padding: 10px;"></i>
+                    </button>
+                </article>
+    
+                <article class="products__card">
+                    <img src="assets/img/html5-missing_manual.jpeg" alt="" class="products__img">
+    
+                    <h3 class="products__title">html5</h3>
+                    <span class="products__price">$30</span>
+    
+                    <button class="products__button">
+                        <i class="fa fa-shopping-cart"
+                            style="font-size:25px;background-color: white; color:  orange;border: none;padding: 10px;"></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="assets/img/frontend-workflow-with-html5-and-sass-book.jpeg" alt="" class="products__img">
+    
+                    <h3 class="products__title">Front-end <br> workflow</h3>
+                    <span class="products__price">$65</span>
+    
+                    <button class="products__button">
+                        <i class="fa fa-shopping-cart"
+                            style="font-size:25px;background-color: white; color:  orange;border: none;padding: 10px;"></i>
+                    </button>
+                </article>
+    
+                <article class="products__card">
+                    <img src="assets/img/html5-missing_manual.jpeg" alt="" class="products__img">
+    
+                    <h3 class="products__title">html5</h3>
+                    <span class="products__price">$30</span>
+    
+                    <button class="products__button">
+                        <i class="fa fa-shopping-cart"
+                            style="font-size:25px;background-color: white; color:  orange;border: none;padding: 10px;"></i>
+                    </button>
+                </article>
+            </div>
+        </section>
+    
+    
+        <script src="./assets/js/search.js"></script>
+    </body>
+    
+    </html>

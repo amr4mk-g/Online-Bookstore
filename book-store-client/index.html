@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>book store</title>
+</head>
+
+<body>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="fa fa-book" style="font-size:24px;color:orange"></i> BOOKS
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Featured</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">books</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">categores</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fa fa-shopping-cart" style="font-size:36px"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <!-- search icone -->
+                <div class="nav__shop" id="cart-shop">
+                    <a href="./search.html"> <i id="myButton" class="fa fa-search" style="font-size:24px;color:orange">
+                        </i></a>
+                </div>
+
+
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag'></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+
+        </section>
+
+        <!--==================== FEATURED ====================-->
+        <section class="featured section container" id="featured">
+            <h2 class="section__title">
+                Featured</h2>
+
+            <div id="featuredBooks" class="featured__container grid">
+
+
+
+            </div>
+
+
+
+
+        </section>
+
+
+
+        <!--==================== books ====================-->
+        <section class="products section container" id="products">
+            <h2 class="section__title">
+                books
+            </h2>
+
+            <div id="bookSection" class="products__container grid">
+
+            </div>
+        </section>
+
+
+        <!--====================   categores====================-->
+        <section class="new section container" id="new">
+            <h2 class="section__title">
+                categores
+            </h2>
+
+            <div class="new__container">
+                <div class="swiper new-swiper">
+                    <div id="categorySection" class="swiper-wrapper">
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEWSLETTER ====================-->
+        <section class="newsletter section container">
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">Subscribe Our <br> Newsletter</h2>
+                    <p class="newsletter__description">
+                        Don't miss out on your discounts. Subscribe to our email
+                        newsletter to get the best offers, discounts, coupons,
+                        gifts and much more.
+                    </p>
+                </div>
+
+                <form action="" class="newsletter__subscribe">
+                    <input type="email" placeholder="Enter your email" class="newsletter__input">
+                    <button class="button">
+                        SUBSCRIBE
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- <script src="script/main.js"></script> -->
+    <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
